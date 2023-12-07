@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма-фільтр</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <label for="productType">Тип продукту:</label>
+        <select id="productType" name="productType">
+            <option value="phone">Телефон</option>
+            <option value="laptop">Ноутбук</option>
+            <option value="vacuum">Пилесос</option>
+            <option value="charger">Зарядка</option>
+        </select>
+
+        <label for="power">Потужність:</label>
+        <div>
+            <input type="checkbox" id="power15w" name="power" value="15w">
+            <label for="power15w">15W</label>
+
+            <input type="checkbox" id="power25w" name="power" value="25w">
+            <label for="power25w">25W</label>
+
+            <input type="checkbox" id="power65w" name="power" value="65w">
+            <label for="power65w">65W</label>
+
+            <input type="checkbox" id="power100w" name="power" value="100w">
+            <label for="power100w">100W</label>
+
+            <input type="checkbox" id="power200w" name="power" value="200w">
+            <label for="power200w">200W</label>
+        </div>
+
+        <label for="brand">Марка:</label>
+        <div>
+            <input type="checkbox" id="brandSamsung" name="brand" value="samsung">
+            <label for="brandSamsung">Samsung</label>
+
+            <input type="checkbox" id="brandLg" name="brand" value="lg">
+            <label for="brandLg">LG</label>
+
+            <input type="checkbox" id="brandAsus" name="brand" value="asus">
+            <label for="brandAsus">Asus</label>
+
+            <input type="checkbox" id="brandLenovo" name="brand" value="lenovo">
+            <label for="brandLenovo">Lenovo</label>
+        </div>
+
+        <label for="sorting">Сортування:</label>
+        <select id="sorting" name="sorting">
+            <option value="cheap">Від дешевих</option>
+            <option value="expensive">Від дорогих</option>
+            <option value="rating">По рейтингу</option>
+        </select>
+
+        <label for="modelName">Назва моделі:</label>
+        <input type="text" id="modelName" name="modelName">
+
+        <input type="submit" value="Відфільтрувати">
+    </form>
+</body>
+</html>
